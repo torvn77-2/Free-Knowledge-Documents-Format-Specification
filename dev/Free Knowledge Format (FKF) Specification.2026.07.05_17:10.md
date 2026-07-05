@@ -58,7 +58,7 @@ FKF retains the atomicity of each knowledge unit (as in OKF) while solving the "
 
 ### 3.1. License Declaration Section
 
-FKF root optional contain a `<fkf_licenses>` section that declares all licenses used within the container. This section is placed before any `<fkf_document>` elements and after the optional `<fkf_spec>`.
+If there are documents with licenses in the FKF container, then root MUST contain a `<fkf_licenses>` section that declares all licenses used within the container. This section is placed before any `<fkf_document>` elements and after the optional `<fkf_spec>`.
 
 ### 3.2. License Structure
 
@@ -162,7 +162,7 @@ The root of an FKF file is `<fkf_root>`, which contains:
   <fkf_licenses>
     <fkf_license id="gpl3" type="copyleft" name="GNU General Public License v3.0" 
                  url="https://www.gnu.org/licenses/gpl-3.0.en.html"> GPL licanse txt </fkf_license>
-  </fkf_license>
+  </fkf_licenses>
 
   <fkf_document doc_path="./relative_doc_path" doc_name="file_name.md">
   <fkf_license ref="gpl3" 
