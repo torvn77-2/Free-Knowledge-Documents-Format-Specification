@@ -294,7 +294,7 @@ For personal use
 CDATA is optional but recommended for blocks that may contain XML special characters. The heredoc‑style ending is supported:
 
 ```xml
-<fkf_data type="Markdown"><![your_domain_example[
+<fkf_data type="Markdown"><![CDATA[
 # Heading
 This contains <tags> and &amp; symbols that would otherwise need escaping.
 ]]></fkf_data>
@@ -410,7 +410,7 @@ author: Alice</fkf_header>
       <ds:SignatureValue>...</ds:SignatureValue>
       <ds:KeyInfo>
         <ds:KeyName>Alice</ds:KeyName>
-        <ds:RetrievalMethod URI="https://keys.your_domain_example.org/alice.asc"/>
+        <ds:RetrievalMethod URI="https://keys.example.org/alice.asc"/>
       </ds:KeyInfo>
     </fkf_header_signature>
 
@@ -441,7 +441,7 @@ REST (Representational State Transfer) is an architectural style for distributed
       <ds:SignatureValue>...</ds:SignatureValue>
       <ds:KeyInfo>
         <ds:KeyName>Alice</ds:KeyName>
-        <ds:RetrievalMethod URI="https://keys.your_domain_example.org/alice.asc"/>
+        <ds:RetrievalMethod URI="https://keys.example.org/alice.asc"/>
       </ds:KeyInfo>
     </fkf_data_signature>
   </fkf_document>
