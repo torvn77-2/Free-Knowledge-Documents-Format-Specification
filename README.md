@@ -25,6 +25,8 @@ For each section you can specify a **data type** using the `type` attribute. Thi
 ## Compatibility with OKF
 
 If you use `YAML` for the header and `Markdown` for the data, each `<fkf_document>` exactly matches the **Open Knowledge Format (OKF)** specification from Google. Thus, FKF acts as a **container for multiple OKF documents**, bundling them into one file without losing structure or semantics.
+>OKF (Open Knowledge Format) is a format developed by Google and distributed under the Apache 2.0 license.  
+>[https://github.com/GoogleCloudPlatform/knowledge-catalog/tree/main/okf](https://github.com/GoogleCloudPlatform/knowledge-catalog/tree/main/okf)
 
 ---
 
