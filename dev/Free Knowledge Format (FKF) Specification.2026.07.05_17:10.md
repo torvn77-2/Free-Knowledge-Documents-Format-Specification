@@ -105,7 +105,6 @@ If there are documents with licenses in the FKF container, then root MUST contai
 | `type` | License type classification: `copyleft`, `permissive`, `proprietary`, `copyright`, `public-domain`, or custom value | Yes |
 | `name` | Full human-readable license name | Yes |
 | `url` | Official URL where the full license text is published | Yes |
-| `text` |  Official text of the license | Yes |
 
 ### 3.4. Document License Declaration
 
