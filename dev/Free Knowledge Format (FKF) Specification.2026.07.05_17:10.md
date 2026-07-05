@@ -297,6 +297,7 @@ CDATA is optional but recommended for blocks that may contain XML special charac
 <fkf_data type="Markdown"><![CDATA[
 # Heading
 This contains <tags> and &amp; symbols that would otherwise need escaping.
+</CDATA>
 ]]></fkf_data>
 ```
 
