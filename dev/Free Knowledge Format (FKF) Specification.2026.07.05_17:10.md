@@ -78,11 +78,11 @@ FKF root optional contain a `<fkf_licenses>` section that declares all licenses 
                type="copyleft" 
                name="GNU General Public License v3.0"
                url="https://www.gnu.org/licenses/gpl-3.0.en.html">
-               Example full license text" <fkf_license/>
+               Example full license text" </fkf_license>
   <fkf_license id="optional example license3" 
                type="permissive" 
                name="MIT License"
-               url="https://opensource.org/licenses/MIT>
+               url="https://opensource.org/licenses/MIT">
                Example full license text"</fkf_license>
   <fkf_license id="optional example license4"
                type="proprietary"
@@ -117,8 +117,8 @@ Section <fkf_document>`maybe include a `<fkf_license>` element that references o
                type="copyleft" 
                name="GNU General Public License v3.0"
                url="https://www.gnu.org/licenses/gpl-3.0.en.html">Optionally specify license text.</fkf_license>
-  <fkf_header type="YAML"><![CDATA[ ... <CDATA/>\&\#10;]]>>;</fkf_header>
-  <fkf_data type="Markdown"><![CDATA[ ... <CDATA/>\&\#10\;]]>>;</fkf_data>
+  <fkf_header type="YAML"><![CDATA[ ... </CDATA>\&\#10;]]>;</fkf_header>
+  <fkf_data type="Markdown"><![CDATA[ ... </CDATA>\&\#10\;]]>;</fkf_data>
 </fkf_document>
 ```
 
@@ -127,7 +127,7 @@ Section <fkf_document>`maybe include a `<fkf_license>` element that references o
 
 ### 3.5. License Verification Rules
 
-1. The document specifying the license must necessarily indicate the type of license, the name of the license, a valid link to the place of official publication of the original source of the license by a public organization; if the license was published by a commercial organization, then in addition to the link it is MANDATORY to refer to the valid license identifier declared in the root of the <fkf_licenses> section, the declaration tag of which contains the full text of the license.
+1. The document specifying the license must necessarily indicate the type of license, the name of the license, a valid link to the place of official publication of the original source of the license by a Nonprofit Foundation organization; if the license was published by a commercial organization, then in addition to the link it is MANDATORY to refer to the valid license identifier declared in the root of the <fkf_licenses> section, the declaration tag of which contains the full text of the license.
 2. The root license section must contain all properly executed licenses whose identifier is declared in the document.
 3. If a document references a non-existent license ID, the document MUST be rejected
 4. License type classification helps with automated compatibility checking
@@ -195,7 +195,7 @@ The root of an FKF file is `<fkf_root>`, which contains:
 | **`<fkf_license>`** | (Optional) Individual license declaration. Attributes: `id` – unique identifier, `type` – license classification, `name` – full license name, `url` – official publication URL. |
 | **`<fkf_document>`** | A single knowledge unit. Attributes: `doc_path` – relative path (from `doc_root_dir`), `doc_name` – file name (may be empty). |
 | **`<fkf_license>`** | (Optional) Document license reference. Attribute: `ref` – references a license ID from the root licenses section. |
-| **`<fkf_header>`** | (Optional) Metadata of the document. Attribute: `type` – format of the header content. |
+| **`<fkf_header>`** | (Optional for personal use and drafts) Metadata of the document. Attribute: `type` – format of the header content. |
 | **`<fkf_header_signature>`** | (Optional) XML Digital Signature over the `<fkf_header>` element. Uses standard XMLDSig with an enveloped transform. |
 | **`<fkf_data>`** | Main content. Attribute: `type` – format of the body. |
 | **`<fkf_data_signature>`** | (Optional) XML Digital Signature over the `<fkf_data>` element. |
@@ -295,7 +295,7 @@ For personal use
 CDATA is optional but recommended for blocks that may contain XML special characters. The heredoc‑style ending is supported:
 
 ```xml
-<fkf_data type="Markdown"><![CDATA[
+<fkf_data type="Markdown"><![your_domain_example[
 # Heading
 This contains <tags> and &amp; symbols that would otherwise need escaping.
 ]]></fkf_data>
@@ -411,7 +411,7 @@ author: Alice</fkf_header>
       <ds:SignatureValue>...</ds:SignatureValue>
       <ds:KeyInfo>
         <ds:KeyName>Alice</ds:KeyName>
-        <ds:RetrievalMethod URI="https://keys.fkf-format.org/alice.asc"/>
+        <ds:RetrievalMethod URI="https://keys.your_domain_example.org/alice.asc"/>
       </ds:KeyInfo>
     </fkf_header_signature>
 
@@ -442,7 +442,7 @@ REST (Representational State Transfer) is an architectural style for distributed
       <ds:SignatureValue>...</ds:SignatureValue>
       <ds:KeyInfo>
         <ds:KeyName>Alice</ds:KeyName>
-        <ds:RetrievalMethod URI="https://keys.fkf-format.org/alice.asc"/>
+        <ds:RetrievalMethod URI="https://keys.your_domain_example.org/alice.asc"/>
       </ds:KeyInfo>
     </fkf_data_signature>
   </fkf_document>
