@@ -1,4 +1,4 @@
-# Free Knowledge Documents Format # Free Knowledge Format (FKF) Specification – Version 1.0 (Final)
+# Free Knowledge Format (FKF) Specification – Version 1.0 (Final)
 
 **Author:** torvn77@gmail.com  
 **Status:** Final  
