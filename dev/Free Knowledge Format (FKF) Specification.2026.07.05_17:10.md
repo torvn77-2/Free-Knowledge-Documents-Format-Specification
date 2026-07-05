@@ -66,34 +66,34 @@ FKF root optional contain a `<fkf_licenses>` section that declares all licenses 
 <fkf_licenses>
     <fkf_license id="no_license"
                type="no_license"
-               name="No Livense"
-               url="none"
-               text="No license granted, all rights reserved"/>
+               name="No License"
+               url="none">
+               No license granted, all rights reserved</fkf_license>
     <fkf_license id="unlicense"
                type="unlicense"
-               name="Public domain license"
-               url="https://unlicense.org"
-               text="This is free and unencumbered software, data and other contents released into the public domain."/>
+               name="Public Domain License"
+               url="https://unlicense.org">
+               This is free and unencumbered software, data and other contents released into the public domain."</fkf_license>
   <fkf_license id="optional example license2" 
                type="copyleft" 
                name="GNU General Public License v3.0"
                url="https://www.gnu.org/licenses/gpl-3.0.en.html">
-               text="example full license text" <fkf_license />
+               Example full license text" <fkf_license/>
   <fkf_license id="optional example license3" 
                type="permissive" 
                name="MIT License"
-               url="https://opensource.org/licenses/MIT"
-               text="example full license text"/>
+               url="https://opensource.org/licenses/MIT>
+               Example full license text"</fkf_license>
   <fkf_license id="optional example license4"
                type="proprietary"
                name="Custom Enterprise License v1.0"
-               url="https://example.com/license"
-               text="example full license text"/>
+               url="https://example.com/license">
+               Example full license text</fkf_license>
     <fkf_license id="optional example license5"
                type="public-domain"
                name="CC0 1.0 Universal"
-               url="https://creativecommons.org/publicdomain/zero/1.0/"
-               text="example full license text"/>
+               url="https://creativecommons.org/publicdomain/zero/1.0/">
+               Example full license text</fkf_license>
 </fkf_licenses>
 ```
 
@@ -161,7 +161,7 @@ The root of an FKF file is `<fkf_root>`, which contains:
 
   <fkf_licenses>
     <fkf_license id="gpl3" type="copyleft" name="GNU General Public License v3.0" 
-                 url="https://www.gnu.org/licenses/gpl-3.0.en.html"/>
+                 url="https://www.gnu.org/licenses/gpl-3.0.en.html"> GPL licanse txt </fkf_license>
   </fkf_license>
 
   <fkf_document doc_path="./relative_doc_path" doc_name="file_name.md">
@@ -386,9 +386,9 @@ Example:
 
   <fkf_licenses>
     <fkf_license id="gpl3" type="copyleft" name="GNU General Public License v3.0" 
-                 url="https://www.gnu.org/licenses/gpl-3.0.en.html"/>
+                 url="https://www.gnu.org/licenses/gpl-3.0.en.html"> GPL licanse txt </fkf_license>
     <fkf_license id="mit" type="permissive" name="MIT License" 
-                 url="https://opensource.org/licenses/MIT"/>
+                 url="https://opensource.org/licenses/MIT"> MIT licanse txt </fkf_license>
   </fkf_licenses>
 
   <fkf_document doc_path="./concepts" doc_name="rest.md">
