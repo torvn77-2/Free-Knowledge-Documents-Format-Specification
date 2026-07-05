@@ -33,6 +33,8 @@
 The **Free Knowledge Format (FKF)** is a container‑oriented, human‑readable, and AI‑friendly file format designed to bundle multiple knowledge documents – each with its own metadata header and content body – into a single file.
 
 FKF retains the atomicity of each knowledge unit (as in OKF) while solving the "many small files" problem. It is built on top of XML to avoid rendering conflicts with Markdown and other textual content, and it explicitly supports both full and shorthand notations to ease manual editing and reduce file size.
+>OKF (Open Knowledge Format) is a format developed by Google and distributed under the Apache 2.0 license.  
+>[https://github.com/GoogleCloudPlatform/knowledge-catalog/tree/main/okf](https://github.com/GoogleCloudPlatform/knowledge-catalog/tree/main/okf)
 
 **Primary use cases:**
 - Building a personal knowledge base that can be shared as a single file
