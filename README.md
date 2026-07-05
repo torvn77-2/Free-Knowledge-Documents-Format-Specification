@@ -1,7 +1,7 @@
 # Free Knowledge Format (FKF) – Container for AI Agents and LLM Chats
 
 **Discussion draft specification:**  
-[https://raw.githubusercontent.com/torvn77-2/Free-Knowledge-Documents-Format-Specification/refs/heads/main/dev/Free%20Knowledge%20Format%20(FKF)%20Specification.2026.07.05_17%3A10.md](https://raw.githubusercontent.com/torvn77-2/Free-Knowledge-Documents-Format-Specification/refs/heads/main/dev/Free%20Knowledge%20Format%20%28FKF%29%20Specification.2026.07.05_17%3A10.md)
+[https://github.com/torvn77-2/Free-Knowledge-Documents-Format-Specification/blob/main/dev/Free%20Knowledge%20Format%20(FKF)%20Specification.2026.07.05_17%3A10.md](https://github.com/torvn77-2/Free-Knowledge-Documents-Format-Specification/blob/main/dev/Free%20Knowledge%20Format%20(FKF)%20Specification.2026.07.05_17%3A10.md)
 
 ---
 
