@@ -58,7 +58,7 @@ FKF retains the atomicity of each knowledge unit (as in OKF) while solving the "
 
 ### 3.1. License Declaration Section
 
-Every FKF root MUST contain a `<fkf_licenses>` section that declares all licenses used within the container. This section is placed before any `<fkf_document>` elements and after the optional `<fkf_spec>`.
+FKF root optional contain a `<fkf_licenses>` section that declares all licenses used within the container. This section is placed before any `<fkf_document>` elements and after the optional `<fkf_spec>`.
 
 ### 3.2. License Structure
 
@@ -109,16 +109,16 @@ Every FKF root MUST contain a `<fkf_licenses>` section that declares all license
 
 ### 3.4. Document License Declaration
 
-Each `<fkf_document>` MUST include a `<fkf_license>` element that references one of the licenses declared in the root section and must duplicate the main data of the license in addition to its text:
+Section <fkf_document>`maybe include a `<fkf_license>` element that references one of the licenses declared in the root section and if they are specified must duplicate the main data of the license in addition to its text:
 
 ```xml
 <fkf_document doc_path="./concepts" doc_name="rest.md">
   <fkf_license ref="license1" 
                type="copyleft" 
                name="GNU General Public License v3.0"
-               url="https://www.gnu.org/licenses/gpl-3.0.en.html">Optionally specify license text.<fkf_license/>
-  <fkf_header type="YAML"><![CDATA[ ... <CDATA/>&#10;]]&gt;</fkf_header>
-  <fkf_data type="Markdown"><![CDATA[ ... <CDATA/>&#10;]]&gt;</fkf_data>
+               url="https://www.gnu.org/licenses/gpl-3.0.en.html">Optionally specify license text.</fkf_license>
+  <fkf_header type="YAML"><![CDATA[ ... <CDATA/>\&\#10;]]>>;</fkf_header>
+  <fkf_data type="Markdown"><![CDATA[ ... <CDATA/>\&\#10\;]]>>;</fkf_data>
 </fkf_document>
 ```
 
