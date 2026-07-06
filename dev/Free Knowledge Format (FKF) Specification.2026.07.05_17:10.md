@@ -170,9 +170,9 @@ The root of an FKF file is `<fkf_root>`, which contains:
                type="copyleft" 
                name="GNU General Public License v3.0"
                url="https://www.gnu.org/licenses/gpl-3.0.en.html"/>
-    <fkf_header type="OKF YAML"><![CDATA[ ... </CDATA>&#10;]]&gt;</fkf_header>
+    <fkf_header type="YAML"><![CDATA[ ... </CDATA>&#10;]]&gt;</fkf_header>
     <fkf_header_signature>...</fkf_header_signature>
-    <fkf_data type="OKF md"><![CDATA[ ... </CDATA>&#10;]]&gt;</fkf_data>
+    <fkf_data type="md"><![CDATA[ ... </CDATA>&#10;]]&gt;</fkf_data>
     <fkf_data_signature>...</fkf_data_signature>
   </fkf_document>
 
